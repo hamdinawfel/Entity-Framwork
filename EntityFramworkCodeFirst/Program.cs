@@ -7,8 +7,11 @@ namespace EntityFramworkCodeFirst
     public class Course
     {
         public int Id { get; set; }
+        [Required]
+        [MaxLength(255)]
         public string Name { get; set; }
         [Required]
+        [MaxLength(2000)]
         public int Description { get; set; }
         public int FullPrice { get; set; }
         public CourseLevel Level { get; set; }
